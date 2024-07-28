@@ -1,0 +1,101 @@
+.numberPopupWrapper{
+  background-color: black;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 90%;
+  z-index: 1;
+  padding: 10px;
+  padding-bottom: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 5px red;
+  color: white;
+}
+
+
+.number-popup-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 5px;
+}
+
+.number-popup-info-btn{
+  background-color: rgb(52, 106, 128);
+  color: white;
+  border-radius: 15px;
+  font-weight: bolder;
+  font-size: 25px;
+  width: 35px;
+  border: none;
+}
+
+.number-popup-bottom{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+
+.number-popup-question-div,
+.number-popup-answer-div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+
+
+.number-popup-question-div p,
+.number-popup-answer-div p{
+  width: 30%;
+}
+
+.number-popup-question-div input,
+.number-popup-answer-div input{
+  width: 80%;
+}
+
+
+
+.number-popup-verify-btn{
+  margin-top: 10px;
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+  transition: 1ms all ease;
+}
+
+.number-popup-verify-btn:active{
+  background-color: black;
+  border: 1px solid white;
+}
+
+
+.number-popup-answer-input-ele{
+  max-width: 65%;
+  margin-left: 10px;
+  text-align: center;
+}
+
+
+.show-number-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(87, 179, 216);
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 12px;
+}

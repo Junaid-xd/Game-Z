@@ -1,0 +1,90 @@
+
+
+.rank-table-popup-wrapper{
+  background-color: black;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 90%;
+  z-index: 2;
+  padding: 10px;
+  padding-bottom: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 5px red;
+  color: white;
+}
+
+
+.rank-popup-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid white;
+}
+
+
+
+.rank-table-heading-div p{
+  padding: 0;
+  margin: 0;
+}
+
+.rank-table-heading-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 30px;
+  font-weight: 900;
+  color: red;
+  letter-spacing: 2px;
+  text-shadow: 0px 1px 2px white;
+}
+
+
+.rank-table{
+  width: 100%;
+  border: 1px solid white;  
+}
+
+.rank-table-body{
+  text-align: center;
+}
+
+.rank-table-head{
+  background-color: rgb(51, 180, 223);
+  height: 30px;
+  color: black;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+
+td{
+  border: 1px solid white;
+}
+
+
+tr:hover{
+  background-color: white;
+  color: black;
+}
+
+.you-row{
+  background-color: green;
+  width: 100%;
+}
+
+.msg-div{
+  color: rgb(138, 133, 133);
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  font-size: 10px;
+  font-weight: bold;
+  justify-content: center;
+}
