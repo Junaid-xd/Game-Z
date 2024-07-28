@@ -123,7 +123,7 @@ function Login({setLogin, setAuthorize, setSignup, setValiduser, setCurrentusers
           <div>
             <p className='error-div'></p>
           </div>
-          <button className='signin-btn' onClick={signIn}>Sign in</button>
+          <button className='signin-btn' onClick={signIn}>Sign-In</button>
         </div>
 
         <div className='sign-up-link-div'>

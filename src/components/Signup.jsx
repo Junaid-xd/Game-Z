@@ -2,10 +2,27 @@
 
 import React, { useEffect, useState } from 'react'
 import './Signup.css'
+import SignupInfoPopup from './SignupInfoPopup';
 
 function Signup({setLogin, setSignup, currentUsers, setFailedMessage, setSuccessMessage, setShowEmergencyPopup}) {
 
   const [reloadKey, setReloadKey] = useState(0);
+
+  const [showSignupInfoPopup, setShowSignupInfoPopup] = useState(false);
+
+  
+  const [isRed, setIsRed] = useState(true);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setIsRed(prevIsRed => !prevIsRed);
+    }, 300);
+
+    return () => clearInterval(intervalId);
+  }, []);
+  
+  
+  
 
 
   useEffect(() => {
@@ -111,6 +128,11 @@ function Signup({setLogin, setSignup, currentUsers, setFailedMessage, setSuccess
     }
   }
 
+
+  const showPopup=()=>{
+    setShowSignupInfoPopup(true);
+  }
+
   
 
   return (
@@ -137,6 +159,10 @@ function Signup({setLogin, setSignup, currentUsers, setFailedMessage, setSuccess
 
       <div className='signup-page-bottom'>
         <div className='signup-wrapper'>
+
+          <div className='signup-info-div'>
+            <p onClick={showPopup} style={{ backgroundColor: isRed ? 'red' : 'blue' }}>i</p>
+          </div>
 
 
           <div className='p-and-input upper'>
@@ -165,6 +191,11 @@ function Signup({setLogin, setSignup, currentUsers, setFailedMessage, setSuccess
         <div className='login-link-div'>
           <a onClick={handelLogin}>Click here to Login</a>
         </div>
+      </div>
+
+
+      <div>
+        {showSignupInfoPopup && <SignupInfoPopup setShowSignupInfoPopup={setShowSignupInfoPopup}/>}
       </div>
     </>
   )

@@ -106,5 +106,22 @@
 }
 
 .upper{
-  margin-top: 5vmax;
+  margin-top: 3vmax;
+}
+
+.signup-info-div{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.signup-info-div p{
+  margin: 0;
+  padding: 0;
+  background-color: red;
+  padding: 5px 15px;
+  border-radius: 20px;
 }
