@@ -49,23 +49,23 @@ function NumberPopup({user, setValiduser, setShowNumberPopup}) {
 
 
       document.querySelector('.number-popup-answer-input-ele').value = "";
-      document.querySelector('.error-div').innerHTML = "";
-      document.querySelector('.error-div').innerHTML = "Aura decreased by 1";
+      document.querySelector('.number-popup-error-div').innerHTML = "";
+      document.querySelector('.number-popup-error-div').innerHTML = "Aura decreased by 1";
       document.querySelector('.show-number-div').innerHTML = `The number was ${number}`;
 
       setTimeout(()=>{
-        document.querySelector('.error-div').innerHTML = "";
+        document.querySelector('.number-popup-error-div').innerHTML = "";
         document.querySelector('.show-number-div').innerHTML = "";
       },3000)
 
     }
     else{
 
-      document.querySelector('.error-div').innerHTML = "";
-      document.querySelector('.error-div').innerHTML = "Incorrect Answer*";
+      document.querySelector('.number-popup-error-div').innerHTML = "";
+      document.querySelector('.number-popup-error-div').innerHTML = "Incorrect Answer*";
       document.querySelector('.show-number-div').innerHTML = `The number was ${number}`;
       setTimeout(()=>{
-        document.querySelector('.error-div').innerHTML = "";
+        document.querySelector('.number-popup-error-div').innerHTML = "";
         document.querySelector('.show-number-div').innerHTML = "";
       },3000)
     }
@@ -181,10 +181,10 @@ function NumberPopup({user, setValiduser, setShowNumberPopup}) {
       }
     }
     else{
-      document.querySelector('.error-div').innerHTML = "";
-      document.querySelector('.error-div').innerHTML = "Enter something first*";
+      document.querySelector('.number-popup-error-div').innerHTML = "";
+      document.querySelector('.number-popup-error-div').innerHTML = "Enter something first*";
       setTimeout(()=>{
-        document.querySelector('.error-div').innerHTML = "";
+        document.querySelector('.number-popup-error-div').innerHTML = "";
       },2000)
     }
   }
@@ -209,7 +209,7 @@ function NumberPopup({user, setValiduser, setShowNumberPopup}) {
               <input type="number" className='number-popup-answer-input-ele' defaultValue={""} placeholder={`guess range (${min}-${max})`}/>
             </div>
 
-            <div className='error-div'></div>
+            <div className='number-popup-error-div'></div>
             <div className='show-number-div'></div>
 
             <button className='number-popup-verify-btn' onClick={verifyGuess}>Guess</button>

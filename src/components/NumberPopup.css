@@ -93,6 +93,11 @@
   font-size: 12px;
 }
 
-.error-div{
+.number-popup-error-div{
   margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: red;
+  font-size: 10px;
 }
