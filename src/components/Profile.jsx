@@ -12,10 +12,7 @@ function Profile({setShowProfile, user, allUsers}) {
   useEffect(()=>{
     allUsers.sort((a, b) => b.score - a.score);
 
-    // console.log("Sorted users : ", allUsers);
-
     const index = allUsers.findIndex(obj => obj._id === user._id) + 1;
-    // console.log("Index is: ", index); 
 
     setRank(index);
 
@@ -24,10 +21,6 @@ function Profile({setShowProfile, user, allUsers}) {
 
   return (
     <>
-
-      
-
-
 
       <div className='profile-main-wrapper'>
 
@@ -48,13 +41,13 @@ function Profile({setShowProfile, user, allUsers}) {
           <div className='profile-detail-upper-div'>
 
             <div className='profile-detail-upper-right-div'>
-              <p>Username : {user.username}</p>
-              <p>Correct  : {user.correctAnswers}</p>
+              <p style={{fontSize: 13}}>Username : {user.username}</p>
+              <p style={{fontSize: 13}}>Correct  : {user.correctAnswers}</p>
             </div>
 
             <div className='profile-detail-upper-left-div'>
-              <p>Aura : {user.score}</p>
-              <p>Attempts : {user.attempts}</p>
+              <p style={{fontSize: 13}}>Aura : {user.score}</p>
+              <p style={{fontSize: 13}}>Attempts : {user.attempts}</p>
             </div>
 
           </div>

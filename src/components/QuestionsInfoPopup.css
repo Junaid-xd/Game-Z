@@ -19,6 +19,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 0px 5px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid white;
 }
 
 
@@ -43,7 +45,7 @@
   align-items: center;
   justify-content: start;
   width: 100%;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bolder;
   padding-left: 10px;
   color: rgb(69, 164, 202);

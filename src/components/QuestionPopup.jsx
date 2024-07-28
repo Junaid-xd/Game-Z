@@ -288,7 +288,7 @@ function QuestionPopup({ allQuestions, setShowquestion, user, setValiduser }) {
 
         <div className='question-popup-bottom'>
           <div className='question-popup-question-div'>
-            <p>Question: </p>
+            <p style={{fontSize:13}}>Question: </p>
             <input
               type="text"
               className='question-input-ele'
@@ -297,7 +297,7 @@ function QuestionPopup({ allQuestions, setShowquestion, user, setValiduser }) {
             />
           </div>
           <div className='question-popup-answer-div'>
-            <p >Answer: </p>
+            <p style={{fontSize:13}}>Answer: </p>
             <input type="text" className='answer-input-ele' defaultValue={""}/>
           </div>
           <div className='error-div'></div>

@@ -55,6 +55,7 @@
   padding: 10px 0px;
   padding-left: 20px;
   transition: 0.1s all ease-in;
+  font-size: 16px;
 }
 
 .side-bar-option:hover{

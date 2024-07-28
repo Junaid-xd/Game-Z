@@ -28,13 +28,13 @@ function QuestionsInfoPopup({setShowQuestionsInfo, question}) {
           <div className='all-info-div-wrapper'>
 
             <div className='top-layer'>
-              <div><p>{`Reward Aura: ${question.reward}`}</p></div>
-              <div><p>{`Difficulty: ${question.difficulty}`}</p></div>
+              <div><p style={{fontSize: 13}}>{`Reward Aura: ${question.reward}`}</p></div>
+              <div><p style={{fontSize: 13}}>{`Difficulty: ${question.difficulty}`}</p></div>
             </div>
 
             <div className='bottom-layer'>
-              <div><p>{`No of Words: ${question.noOfWords}`}</p></div>
-              <div><p>{`Hint: ${question.hint}`}</p></div>
+              <div><p style={{fontSize: 13}}>{`No of Words: ${question.noOfWords}`}</p></div>
+              <div><p style={{fontSize: 13}}>{`Hint: ${question.hint}`}</p></div>
             </div>
 
           </div>

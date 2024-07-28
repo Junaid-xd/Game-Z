@@ -11,7 +11,7 @@
   padding: 10px;
   padding-bottom: 30px;
   border-radius: 20px;
-  box-shadow: 0px 0px 10px 5px red;
+  box-shadow: 0px 0px 10px 5px rgb(64, 213, 254);
   color: white;
 }
 
@@ -40,9 +40,8 @@
   width: 100%;
   font-size: 30px;
   font-weight: 900;
-  color: red;
+  color: rgb(97, 193, 248);
   letter-spacing: 2px;
-  text-shadow: 0px 1px 2px white;
 }
 
 
@@ -56,11 +55,11 @@
 }
 
 .rank-table-head{
-  background-color: rgb(51, 180, 223);
+  background-color: rgb(126, 221, 253);
   height: 30px;
   color: black;
   font-weight: bolder;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 

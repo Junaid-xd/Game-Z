@@ -42,11 +42,11 @@
 }
 
 
-.number-popup-question-div,
+
 .number-popup-answer-div{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 90%;
   font-weight: bold;
   font-size: 15px;
@@ -54,15 +54,9 @@
 
 
 
-.number-popup-question-div p,
-.number-popup-answer-div p{
-  width: 30%;
-}
 
-.number-popup-question-div input,
-.number-popup-answer-div input{
-  width: 80%;
-}
+
+
 
 
 
@@ -84,8 +78,7 @@
 
 
 .number-popup-answer-input-ele{
-  max-width: 55%;
-  margin-left: 5px;
+  
   text-align: center;
 }
 
