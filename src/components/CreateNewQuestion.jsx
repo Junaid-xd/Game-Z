@@ -154,18 +154,18 @@ function CreateNewQuestion({user, setShowCreateNewQuestionPopup, setFailedMessag
         <div className="new-question-popup-form">
 
           <div className='form-input'>
-            <p>Question</p>
+            <p style={{fontSize: 13}}>Question</p>
             <input type="text" placeholder='question goes here' className='form-input-question-ele'/>
           </div>
 
 
           <div className='form-input'>
-            <p>Answer</p>
+            <p style={{fontSize: 13}}>Answer</p>
             <input type="text" placeholder='answer goes here' className='form-input-answer-ele'/>
           </div>
 
           <div className='form-input'>
-            <p>Hint</p>
+            <p style={{fontSize: 13}}>Hint</p>
             <input type="text" placeholder='(optional)' className='form-input-hint-ele'/>
           </div>
 

@@ -205,7 +205,7 @@ function NumberPopup({user, setValiduser, setShowNumberPopup}) {
         <div className='number-popup-bottom'>
 
             <div className='number-popup-answer-div'>
-              <p >Your Guess:</p>
+              <p style={{fontSize:13}}>Your Guess:</p>
               <input type="number" className='number-popup-answer-input-ele' defaultValue={""} placeholder={`guess range (${min}-${max})`}/>
             </div>
 

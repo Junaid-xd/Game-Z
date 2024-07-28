@@ -285,6 +285,7 @@ function QuestionPopup({ allQuestions, setShowquestion, user, setValiduser }) {
             <button className='question-popup-close-btn' onClick={closeQuestionPopup}>X</button>
           </div>
         </div>
+
         <div className='question-popup-bottom'>
           <div className='question-popup-question-div'>
             <p>Question: </p>
@@ -293,7 +294,6 @@ function QuestionPopup({ allQuestions, setShowquestion, user, setValiduser }) {
               className='question-input-ele'
               value={randomQuestion.query}
               readOnly
-              style={{ userSelect: "none", pointerEvents: "none" }}
             />
           </div>
           <div className='question-popup-answer-div'>

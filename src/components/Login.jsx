@@ -110,13 +110,13 @@ function Login({setLogin, setAuthorize, setSignup, setValiduser, setCurrentusers
         <div className='login-wrapper' >
 
           <div className='p-and-input upper'>
-            <p>Username:</p>
+            <p style={{fontSize: 13}}>Username:</p>
             <input type="text" placeholder='enter your username' className='login-username-input-ele'/>
           </div>
 
 
           <div className='p-and-input'>
-            <p>Password:</p>
+            <p style={{fontSize: 13}}>Password:</p>
             <input type="password" placeholder='enter your password' className='login-password-input-ele'/>
           </div>
 

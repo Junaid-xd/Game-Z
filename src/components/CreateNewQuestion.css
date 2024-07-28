@@ -45,11 +45,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 12%;
+  padding: 0px 5%;
 }
 
 .radio-div{
-  margin-top: 10px;
+  margin-top: 13px;
 }
 
 .create-btn-div{

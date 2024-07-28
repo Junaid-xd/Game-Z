@@ -140,17 +140,17 @@ function Signup({setLogin, setSignup, currentUsers, setFailedMessage, setSuccess
 
 
           <div className='p-and-input upper'>
-            <p>Username</p>
+            <p style={{fontSize: 13}}>Username</p>
             <input type="text" placeholder='enter username' className='name-input-ele'/>
           </div>
 
           <div className='p-and-input'>
-            <p>Password</p>
+            <p style={{fontSize: 13}}>Password</p>
             <input type="password" placeholder='create password' className='password-input-ele'/>
           </div>
 
           <div className='p-and-input'>
-            <p>Confirm Password</p>
+            <p style={{fontSize: 13}}>Confirm Password</p>
             <input type="password" placeholder='confirm password' className='confirm-password-input-ele'/>
           </div>
 

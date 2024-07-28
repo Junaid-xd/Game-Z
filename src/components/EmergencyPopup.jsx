@@ -56,11 +56,11 @@ function EmergencyPopup({successMessage, failedMessage, setSuccessMessage, setFa
 
 
         <div className="emergency-popup-bottom">
-          <p>{successMessage || failedMessage}</p>
+          <p style={{fontSize: 14}}>{successMessage || failedMessage}</p>
         </div>
 
         <div className='emergency-popup-note-div'>
-            <p>{emergencyPopupNote}</p>
+            <p style={{fontSize: 13}}>{emergencyPopupNote}</p>
         </div>
 
       </div>

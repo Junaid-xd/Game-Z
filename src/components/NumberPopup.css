@@ -9,7 +9,7 @@
   padding: 10px;
   padding-bottom: 30px;
   border-radius: 20px;
-  box-shadow: 0px 0px 10px 5px red;
+  box-shadow: 0px 0px 10px 5px yellow;
   color: white;
 }
 
@@ -84,8 +84,8 @@
 
 
 .number-popup-answer-input-ele{
-  max-width: 65%;
-  margin-left: 10px;
+  max-width: 55%;
+  margin-left: 5px;
   text-align: center;
 }
 

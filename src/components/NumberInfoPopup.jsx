@@ -14,9 +14,9 @@ function NumberInfoPopup({setShowNumberPopupInfo, min, max}) {
         </div>
 
         <div className="number-info-popup-bottom">
-          <p>Guess the number between {min}-{max}.</p>
-          <p>Correct Answer will lead to +10 Aura Points.</p>
-          <p>Wrong Answer will lead to -1 Aura Point.</p>
+          <p style={{fontSize:13}}>Guess the number between {min}-{max}.</p>
+          <p style={{fontSize:13}}>Correct Answer will lead to +10 Aura Points.</p>
+          <p style={{fontSize:13}}>Wrong Answer will lead to -1 Aura Point.</p>
         </div>
       </div>
     </>
