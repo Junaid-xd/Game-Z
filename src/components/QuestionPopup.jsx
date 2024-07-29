@@ -81,7 +81,6 @@ function QuestionPopup({ allQuestions, setShowquestion, user, setValiduser }) {
       const index = Math.floor(Math.random() * questions.length);
       setRandomQuestion(questions[index]);
     }
-    //console.log("All Valid Questions: ", questions);
   }, [questions]);
 
 
@@ -241,7 +240,7 @@ function QuestionPopup({ allQuestions, setShowquestion, user, setValiduser }) {
   }
 
   const verifyAnswer = ()=>{
-    const givenAnswer = document.querySelector('.answer-input-ele').value;
+    const givenAnswer = document.querySelector('.answer-input-ele').value.toLowerCase();
 
     if(givenAnswer!=""){
 

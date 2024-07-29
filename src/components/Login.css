@@ -89,6 +89,7 @@
 .login-username-input-ele::placeholder,
 .login-password-input-ele::placeholder{
   text-align: center;
+  font-size: 10px;
 }
 
 .signin-btn{
