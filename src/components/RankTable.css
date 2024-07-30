@@ -73,6 +73,11 @@ tr:hover{
   color: black;
 }
 
+tr{
+  font-size: 13px;
+  font-weight: normal;
+}
+
 .you-row{
   background-color: green;
   width: 100%;
