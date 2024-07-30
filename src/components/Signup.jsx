@@ -41,91 +41,108 @@ function Signup({setLogin, setSignup, currentUsers, setFailedMessage, setSuccess
 
   const createUser = async()=>{
     const user = document.querySelector(".name-input-ele").value;
-    const pass = document.querySelector(".password-input-ele").value;
-    const confirmPass = document.querySelector(".confirm-password-input-ele").value;
 
-    if(user!="" && pass!="" && confirmPass!=""){
+    if(user!="Game Z" || user!="Game z" || user!="game z"){
 
-      document.querySelector('.error-div').innerHTML = "";
 
-      let fineName = true;
+      const pass = document.querySelector(".password-input-ele").value;
+      const confirmPass = document.querySelector(".confirm-password-input-ele").value;
 
-      currentUsers.forEach((singleUser)=>{
-        if(singleUser.username == user){
-          fineName=false;
-          document.querySelector('.error-div').innerHTML = "";
-          document.querySelector('.error-div').innerHTML = "This username is already taken*";
-          setTimeout(()=>{
+      if(user!="" && pass!="" && confirmPass!=""){
+
+        document.querySelector('.error-div').innerHTML = "";
+
+        let fineName = true;
+
+        currentUsers.forEach((singleUser)=>{
+          if(singleUser.username == user){
+            fineName=false;
             document.querySelector('.error-div').innerHTML = "";
-          },3000)
-        }
-      })
+            document.querySelector('.error-div').innerHTML = "This username is already taken*";
+            setTimeout(()=>{
+              document.querySelector('.error-div').innerHTML = "";
+            },3000)
+          }
+        })
 
-      if(fineName){
+        if(fineName){
 
-        if(pass==confirmPass){
+          if(pass==confirmPass){
 
-          try{
+            try{
 
-            const send = await fetch('https://ap-south-1.aws.data.mongodb-api.com/app/playersdata-xrbubxz/endpoint/api/playersData/createUser', {
-              method: 'POST',
-              headers: {
-                  'Content-Type': 'application/json'
-              },
-              body: JSON.stringify({ 
-                username: user,
-                password: pass,
-                score: 0,
-                correctAnswers: 0,
-                attempts: 0
-              })
-            });
-      
-            const result = await send.json();
-      
-      
-            document.querySelector(".name-input-ele").value = "";
-            document.querySelector(".password-input-ele").value = "";
-            document.querySelector(".confirm-password-input-ele").value = "";
+              const send = await fetch('https://ap-south-1.aws.data.mongodb-api.com/app/playersdata-xrbubxz/endpoint/api/playersData/createUser', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ 
+                  username: user,
+                  password: pass,
+                  score: 0,
+                  correctAnswers: 0,
+                  attempts: 0
+                })
+              });
+        
+              const result = await send.json();
+        
+        
+              document.querySelector(".name-input-ele").value = "";
+              document.querySelector(".password-input-ele").value = "";
+              document.querySelector(".confirm-password-input-ele").value = "";
 
-            setSignup(false);
-            setLogin(true);
+              setSignup(false);
+              setLogin(true);
 
 
-            if(send.ok){
-              setSuccessMessage("Your account has been created successfully");
+              if(send.ok){
+                setSuccessMessage("Your account has been created successfully");
+                setShowEmergencyPopup(true);
+              }
+
+              
+
+
+            }
+            catch(error){
+              console.error("Error fetching data:", error);
+              setFailedMessage("Bad internet connection");
               setShowEmergencyPopup(true);
             }
 
-            
-
-
           }
-          catch(error){
-            console.error("Error fetching data:", error);
-            setFailedMessage("Bad internet connection");
-            setShowEmergencyPopup(true);
-          }
-
-        }
-        else{
-          document.querySelector('.error-div').innerHTML = "";
-          document.querySelector('.error-div').innerHTML = "Password fields dosen't match*";
-          setTimeout(()=>{
+          else{
             document.querySelector('.error-div').innerHTML = "";
-          },3000)
+            document.querySelector('.error-div').innerHTML = "Password fields dosen't match*";
+            setTimeout(()=>{
+              document.querySelector('.error-div').innerHTML = "";
+            },3000)
+          }
         }
+
+      }
+      else{
+        document.querySelector('.error-div').innerHTML = "";
+        document.querySelector('.error-div').innerHTML = "Please fill all fields*";
+
+        setTimeout(()=>{
+          document.querySelector('.error-div').innerHTML = "";
+        }, 2000)
       }
 
     }
     else{
-      document.querySelector('.error-div').innerHTML = "";
-      document.querySelector('.error-div').innerHTML = "Please fill all fields*";
 
+      document.querySelector('.error-div').innerHTML = "";
+      document.querySelector('.error-div').innerHTML = "This username is already taken*";
       setTimeout(()=>{
         document.querySelector('.error-div').innerHTML = "";
-      }, 2000)
+      },3000)
+
     }
+
+    
   }
 
 
