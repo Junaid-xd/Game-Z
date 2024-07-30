@@ -6,7 +6,7 @@ import CongratulationPopup from './CongratulationPopup';
 function NumberPopup({user, setValiduser, setShowNumberPopup}) {
 
   const min = 1;
-  const max = 10;
+  const max = 5;
 
   const [showNumberPopupInfo, setShowNumberPopupInfo] = useState(false);
 
