@@ -26,6 +26,7 @@ function NewQuestionInfoPopup({setShowNewQuestionInfoPopup}) {
           <p>Make your question answerable by providing related hints. Make it general so anyone can answer.</p>
           <p>Choose the difficulty level wisely as they all have different reward aura points.</p>
           <p>Make sure your answer doesn't have more than three words. Make it as short as possible.</p>
+          <p>Questions that violate the Game Z policy will be removed from the database server.</p>
           <p>Game Z is not case sensitive.</p>
         </div>
 
