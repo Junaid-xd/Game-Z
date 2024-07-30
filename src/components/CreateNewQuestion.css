@@ -33,12 +33,24 @@
 .new-question-popup-heading-div{
   display: flex;
   align-items: center;
-  justify-content: start;
-  width: 100%;
-  font-size: 25px;
+  justify-content: space-between;
+  width: 70%;
+  font-size: 18px;
   font-weight: 900;
   color: rgb(70, 205, 243);
   padding-left: 15px;
+}
+
+.new-question-info-popup-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(9, 104, 142);
+  color: white;
+  font-size: 20px;
+  width: 10%;
+  border-radius: 20px;
+  
 }
 
 .form-input{
@@ -50,6 +62,7 @@
 
 .radio-div{
   margin-top: 13px;
+  font-size: 13px;
 }
 
 .create-btn-div{

@@ -90,7 +90,7 @@ function SideBar({setShowSideBar, user, allUsers, setFailedMessage, setSuccessMe
         )}
 
 
-        <div className='side-bar-option'>Game Info</div>
+        {/* <div className='side-bar-option'>Game Info</div> */}
         <div className='side-bar-option' onClick={()=>window.location.reload()}>LogOut</div>
 
 

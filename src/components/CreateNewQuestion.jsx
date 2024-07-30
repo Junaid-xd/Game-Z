@@ -1,7 +1,23 @@
 import React, {useEffect, useState} from 'react'
 import './CreateNewQuestion.css'
+import NewQuestionInfoPopup from './NewQuestionInfoPopup';
 
 function CreateNewQuestion({user, setShowCreateNewQuestionPopup, setFailedMessage, setSuccessMessage, setShowEmergencyPopup, setEmergencyPopupNote}) {
+
+
+  const [showNewQuestionInfoPopup, setShowNewQuestionInfoPopup] = useState(false);
+
+
+
+  const [isRed, setIsRed] = useState(true);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setIsRed(prevIsRed => !prevIsRed);
+    }, 300);
+
+    return () => clearInterval(intervalId);
+  }, []);
 
   
 
@@ -141,6 +157,7 @@ function CreateNewQuestion({user, setShowCreateNewQuestionPopup, setFailedMessag
         <div className="new-question-popup-top">
 
           <div className='new-question-popup-heading-div'>
+            <p className='new-question-info-popup-btn' style={{ backgroundColor: isRed ? 'red' : 'blue' }} onClick={()=>setShowNewQuestionInfoPopup(true)}>i</p>
             <p>Create your question</p>
           </div>
 
@@ -207,6 +224,11 @@ function CreateNewQuestion({user, setShowCreateNewQuestionPopup, setFailedMessag
         </div>
 
 
+      </div>
+
+
+      <div>
+        {showNewQuestionInfoPopup && <NewQuestionInfoPopup setShowNewQuestionInfoPopup={setShowNewQuestionInfoPopup}/>}
       </div>
     </>
   )

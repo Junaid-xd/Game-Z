@@ -50,7 +50,6 @@ function Login({setLogin, setAuthorize, setSignup, setValiduser, setCurrentusers
 
       
       currentUsers.forEach((user)=>{
-        //console.log(typeof(user.username), typeof(user.password));
         if(user.username == enteredName && user.password == enteredPassword){
           setValiduser(user);
           setLogin(false);
