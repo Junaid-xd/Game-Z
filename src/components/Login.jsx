@@ -68,12 +68,6 @@ function Login({setAuthorize, setValiduser, allUsers}) {
 
   }
 
-  
-  const setupSignup = ()=>{
-    setSignup(true);
-    setLogin(false);
-  }
-
 
 
   return (
@@ -119,9 +113,8 @@ function Login({setAuthorize, setValiduser, allUsers}) {
         </div>
 
         <div className='sign-up-link-div'>
-          {/* <a  onClick={setupSignup}>Click here to SignUp</a> */}
 
-          <Link to='/signup'>Click here to SignUp</Link>
+          <Link to='/signup' style={{color:"cyan"}}>Click here to SignUp</Link>
         </div>
       </div>
     </>
